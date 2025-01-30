@@ -1,4 +1,13 @@
 # Maven
+- task: FortifyScanCentralSAST@7
+  inputs:
+    scanCentralCtrlUrl: 'https://np.sast.aat.deloitte.com/scancentral-ctrl'
+    scanCentralClientToken: 'N33dful%'
+    sscUrl: 'https://np.ssc.aat.deloitte.com/ssc'
+    sscCiToken: '724e6a0e-b572-4f5a-a564-988670130608'
+    uploadToSSC: true
+    applicationIdentifierType: 'byId'
+    applicationVersionId: '13346'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
